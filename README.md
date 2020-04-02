@@ -3,6 +3,8 @@
 
 ## Deadline 09.04 EOD
 
+## WITHOUT ES6
+
 #### Important: You shouldn't use global variables
 
 ##### 1) Write a function splitAndMerge
