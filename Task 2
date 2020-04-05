@@ -1,10 +1,18 @@
+"use strict";
+
 function HashIntoArray(hash) {
-    var array = Object.keys(hash);
-    return array.map(key => [key, hash[key]])
-};
+  var array = Object.keys(hash);
+  return array.map(function (key) {
+    return [key, hash[key]];
+  });
+}
 
-console.log(HashIntoArray({name: 'Jeremy',age: 24,role: 'Software Engineer'}));
-
+;
+console.log(HashIntoArray({
+  name: 'Jeremy',
+  age: 24,
+  role: 'Software Engineer'
+}));
 /*result::
 [["name", "Jeremy"], ["age", 24], ["role", "Software Engineer"]]
 */
