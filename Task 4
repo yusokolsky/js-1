@@ -1,0 +1,9 @@
+function Reverse(str) {
+  return str.split(' ').map(word => word.split('').reverse().join('')).join(' ');
+};
+
+console.log(Reverse(" A fun little challenge! "));
+
+/*result::
+ A nuf elttil !egnellahc 
+*/
