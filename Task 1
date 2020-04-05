@@ -1,15 +1,17 @@
 function splitAndMerge(str, sp) {
-    var wordsIntoCharacters = str.split(' ').map(word =>
-        word.split('')
-    ); //divide the sentence into words and then divide each word into characters
-    return wordsIntoCharacters.map(elem =>
-        elem = elem.join(sp) //then merge each characters with the specified sp; at last merge all the words
-    ).join(sp); //and return it
-};
+  var wordsIntoCharacters = str.split(' ').map(function (word) {
+    return word.split('');
+  }); //divide the sentence into words and then divide each word into characters
 
+  return wordsIntoCharacters.map(function (elem) {
+    return elem = elem.join(sp);
+  } //then merge each characters with the specified sp; at last merge all the words
+  ).join(sp); //and return it
+}
+
+;
 console.log(splitAndMerge("My name is John", " "));
 console.log(splitAndMerge("Hello World!", ","));
-
 
 /*result::
 M y n a m e i s J o h n
