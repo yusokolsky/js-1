@@ -1,0 +1,23 @@
+function largest() {
+  var max = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    max = arguments[i] > max ? arguments[i] : max;
+  }
+  return max;
+}
+
+function smallest() {
+  var min = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    min = arguments[i] < min ? arguments[i] : min;
+  }
+  return min;
+}
+
+
+console.log(largest(2, 0.1, -5, 100, 3));
+console.log(smallest(2, 0.1, -5, 100, 3));
+/*result::
+  100
+  -5
+*/
