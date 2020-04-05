@@ -1,0 +1,20 @@
+function stringExpansion(str) {
+  return str.replace(/(\d)([^\d]*)/g, function(match) {
+    return match.slice(1).repeat(match[0]);
+  })
+}
+
+console.log('3D2a5d2f === '+stringExpansion('3D2a5d2f'));
+console.log('3d332f2a === '+stringExpansion('3d332f2a'));
+console.log('3D332F2A === '+stringExpansion('3D332F2A'));
+console.log('abcde === '+stringExpansion('abcde'));
+console.log('Empty string === '+stringExpansion(''));
+
+
+/*result::
+3D2a5d2f === DDDaadddddff
+3d332f2a === dddffaa
+3D332F2A === DDDFFAA
+abcde === abcde
+Empty string == 
+*/
