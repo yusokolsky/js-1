@@ -1,13 +1,10 @@
-"use strict";
-
-function Reverse(str) {
+function reverse(str) {
   return str.split(' ').map(function (word) {
     return word.split('').reverse().join('');
   }).join(' ');
 }
 
-;
-console.log(Reverse(" A fun little challenge! "));
+console.log(reverse(" A fun little challenge! "));
 /*result::
  A nuf elttil !egnellahc 
 */
