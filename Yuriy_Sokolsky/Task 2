@@ -1,6 +1,4 @@
-"use strict";
-
-function HashIntoArray(hash) {
+function hashIntoArray(hash) {
   var array = Object.keys(hash);
   return array.map(function (key) {
     return [key, hash[key]];
@@ -8,7 +6,7 @@ function HashIntoArray(hash) {
 }
 
 ;
-console.log(HashIntoArray({
+console.log(hashIntoArray({
   name: 'Jeremy',
   age: 24,
   role: 'Software Engineer'
