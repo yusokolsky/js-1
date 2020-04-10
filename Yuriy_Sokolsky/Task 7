@@ -1,5 +1,5 @@
-function transform(Array) {
-  return Array.map(function(value) {
+function transform(arr) {
+  return arr.map(function(value) {
     return function() {
       return value;
     };
